@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "react": "16.0.0-alpha.12",
@@ -14,7 +16,8 @@
     "react-native-maps": "^0.16.4",
     "react-native-modal-datetime-picker": "^4.11.0",
     "react-native-vector-icons": "^4.4.0",
-    "react-navigation": "^1.0.0-beta.11"
+    "react-navigation": "^1.0.0-beta.11",
+    "snyk": "^1.95.3"
   },
   "devDependencies": {
     "babel-jest": "21.0.2",
@@ -25,5 +28,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "snyk": true
 }
